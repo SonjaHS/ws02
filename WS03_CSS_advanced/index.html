@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Testi</title>
+  <link rel="stylesheet" href="styles.css">
+<style>
+  
+   .transition-button {
+      background-color: lightblue;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .transition-button:hover {
+      background-color: lightcoral;
+    }
+
+  h2 {
+    color: green;
+  }
+
+  p {
+    font-size: 16px;
+  }/* ✅ TASK 2: CSS Animation */
+.animation-box {
+  width: 50px;
+  height: 50px;
+  background-color: lightgreen;
+  position: relative;
+  animation: move 2s infinite alternate;
+}
+
+@keyframes move {
+  from {
+    left: 0;
+  }
+  to {
+    left: 100px;
+  }
+}
+/* ✅ TASK 3: CSS Pseudo-classes */
+
+.pseudo-list li:nth-child(odd) {
+  background-color: lightgray;
+}
+
+.pseudo-list li:nth-child(even) {
+  background-color: white;
+}
+/* Task 4: CSS Filters */
+
+.filter-image {
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+
+.filter-image:hover {
+  filter: grayscale(0%);
+}
+/* Task 5: CSS Pseudo-elements */
+.quote {
+  position: relative;
+  padding-left: 40px;
+  font-style: italic;
+  margin: 40px 20px;
+  max-width: 600px;
+}
+
+.quote::before {
+  content: "'";
+  position: absolute;
+  left: 0;
+  top: -10px;
+  font-size: 40px;
+  color: lightgray;
+}
+
+
+</style>
+``
+
+</head>
+<body>
+  <h1 style="color: red;">Hei, minä olen Sonja</h1>
+  <p>Opettelen HTML:n perusteita ja teen ensimmäistä kotisivuani.</p>
+<img src="./images/sonja.jpg" alt="Kuva minusta" width="300"class="filter-image">
+<h2>Harrastukseni</h2>
+
+<ul>
+  <li>Uiminen</li>
+  <li>Kuntosali</li>
+  <li>Laulaminen</li>
+</ul>
+
+
+<h2>Lempiasiani numeroina</h2>
+<ol>
+  <li>Kahvi</li>
+  <li>Pasta</li>
+  <li>Yatzy</li>
+</ol>
+
+<a href="https://www.laurea.fi">Visit Laurea</a>
+
+<h2>Opintoni</h2>
+
+<table>
+  <tr>
+    <th>Kurssi</th>
+    <th>Ajankohta</th>
+  </tr>
+  <tr>
+    <td>Web-kehitys</td>
+    <td>Kevät 2026</td>
+  </tr>
+  <tr>
+    <td>Ohjelmoinnin perusteet</td>
+    <td>Kevät 2026</td>
+  </tr>
+  <tr>
+    <td>Digitaalinen media</td>
+    <td>Syksy 2026</td>
+  </tr>
+</table>
+<div class="content-box"></div>
+<h2>Ota yhteyttä</h2>
+
+
+
+<form>
+    <label for="name">Nimi:</label><br>
+    <input type="text" id="name" name="name"><br><br>
+
+    <label for="email">Sähköposti:</label><br>
+    <input type="email" id="email" name="email"><br><br>
+
+    <input type="submit" value="Lähetä">
+  </form>
+<button class="transition-button">Hoverme</button>
+<div class="animation-box"></div>
+<!-- ✅ TASK 3: Pseudo-classes -->
+<ul class="pseudo-list">
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</li>
+  <li>Item 4</li>
+</ul>
+<!-- Task 5: CSS Pseudo-elements -->
+<blockquote class="quote">
+  This is a sample quote.
+</blockquote>
+</body>
+</html>
